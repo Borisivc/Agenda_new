@@ -1,0 +1,23 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+      <ion-title>
+          AGENDA MEDICA
+      </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+      <ion-segment value="hora" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="hora">
+              <ion-icon name="calendar-outline"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button value="medico">
+              <ion-icon name="person-outline"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button value="especialidad">
+              <ion-icon name="briefcase-outline"></ion-icon>
+          </ion-segment-button>
+      </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

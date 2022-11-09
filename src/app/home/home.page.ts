@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Browser } from '@capacitor/browser';
 
 @Component({
@@ -8,7 +9,7 @@ import { Browser } from '@capacitor/browser';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   async openBrowser() {
     await Browser.open({ url: 'https://www.google.cl/' });
@@ -21,4 +22,7 @@ export class HomePage {
     await Browser.close();
   }
 
+  agenda() {
+    this.router.navigate(['agenda']);
+  }
 }

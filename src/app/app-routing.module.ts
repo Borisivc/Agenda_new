@@ -20,9 +20,15 @@ const routes: Routes = [
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
   {
+    path: 'agenda',
+    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+  
+
 
 ];
 
