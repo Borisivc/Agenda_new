@@ -27,9 +27,6 @@ const routes: Routes = [
     path: '**',
     loadChildren: () => import('./notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
-  
-
-
 ];
 
 @NgModule({

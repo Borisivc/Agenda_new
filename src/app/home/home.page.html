@@ -1,5 +1,4 @@
 <ion-content>
- 
     <ion-header>
     </ion-header>
     <ion-title>
@@ -12,15 +11,12 @@
     <p>
         <ion-icon name="calendar-outline"></ion-icon>
     </p>
-    
 </ion-content>
-
-<ion-button ion-button color="primary" href="login">Login</ion-button>
-<ion-button ion-button color="primary" (click)="agenda()">agenda</ion-button>
-
 <ion-content>
-    <ion-button expand="block" class="ion-margin" (click)="openBrowser()">abrir pagina</ion-button>
+<ion-button expand="block" class="ion-margin" ion-button color="primary" [routerLink]="['/login']">Login</ion-button>
+<ion-button expand="block" class="ion-margin" ion-button color="primary" [routerLink]="['/agenda']">Agenda</ion-button>
+<ion-button expand="block" class="ion-margin" ion-button color="primary" (click)="openBrowser()">Navegador</ion-button>
   
 </ion-content>
 
-<a href="login" class="ion-text-center">Cree su cuenta gratis</a>
+<a [routerLink]="['/login']" class="ion-text-center">Cree su cuenta gratis</a>
