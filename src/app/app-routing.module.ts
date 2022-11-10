@@ -32,9 +32,15 @@ const routes: Routes = [
     loadChildren: () => import('./profesionales/profesionales.module').then( m => m.ProfesionalesPageModule)
   },
   {
+    path: 'contactanos',
+    loadChildren: () => import('./contactanos/contactanos.module').then( m => m.ContactanosPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+  
+
   
 
  
