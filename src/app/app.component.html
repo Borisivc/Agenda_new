@@ -8,23 +8,26 @@
             </ion-toolbar>
         </ion-header>
         <ion-content>
-            <ion-list>
-                <ion-item>
-                    <ion-icon name="business"></ion-icon> Centros Medicos
-                </ion-item>
-                <ion-item>
-                    <ion-icon name="reader"></ion-icon> Especialidades
-                </ion-item>
-                <ion-item>
-                    <ion-icon name="today"[routerLink]="['/agenda']"></ion-icon> Tomas de Horas
-                </ion-item>
-                <ion-item>
-                    <ion-icon name="help-circle"[routerLink]="['/agendas']"></ion-icon> Ayuda
-                </ion-item>
-                <ion-item>
-                    <ion-icon name="call"></ion-icon>Contactanos
-                </ion-item>
-            </ion-list>
+            <ion-item>
+                <ion-icon name="business"></ion-icon>
+                <ion-text>&nbsp;Centros Medicos</ion-text>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="reader"></ion-icon> 
+                <ion-text [routerLink]="['/especialidad']">&nbsp;Especialidades</ion-text>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="today"[routerLink]="['/agenda']"></ion-icon>
+                <ion-text [routerLink]="['/agenda']">&nbsp;Tomas de Horas</ion-text>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="help-circle"[routerLink]="['/agendas']"></ion-icon>
+                <ion-text [routerLink]="['/agendas']">&nbsp;Ayuda</ion-text>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="call"></ion-icon>
+                <ion-text>&nbsp;Contactanos</ion-text>
+              </ion-item>
         </ion-content>
         <ion-item lines="full">
             <ion-icon slot="start" name="moon"></ion-icon>

@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EspecialidadComponent } from '../especialidad/especialidad.component';
 import { HoraComponent } from '../hora/hora.component';
-import { MedicoComponent } from '../medico/medico.component';
+import { ProcedimientosComponent } from '../procedimientos/procedimientos.component';
 import { AgendaPage } from './agenda.page';
 
 const routes: Routes = [
@@ -15,13 +14,9 @@ const routes: Routes = [
         component: HoraComponent
       },
       {
-        path:'medico',
-        component: MedicoComponent
+        path:'procedimientos',
+        component: ProcedimientosComponent
       },
-      {
-        path:'especialidad',
-        component: EspecialidadComponent
-      }
     ]
   },
 

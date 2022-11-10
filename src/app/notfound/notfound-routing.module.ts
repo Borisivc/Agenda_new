@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { NotfoundPage } from './notfound.page';
 
 const routes: Routes = [
@@ -10,8 +9,12 @@ const routes: Routes = [
   }
 ];
 
-@NgModule({
+@NgModule(
+  {
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-})
-export class NotfoundPageRoutingModule {}
+  })
+export class NotfoundPageRoutingModule 
+  {
+    
+  }
