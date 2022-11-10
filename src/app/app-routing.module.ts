@@ -24,9 +24,21 @@ const routes: Routes = [
     loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
   },
   {
+    path: 'especialidad',
+    loadChildren: () => import('./especialidad/especialidad.module').then( m => m.EspecialidadPageModule)
+  },
+  {
+    path: 'profesionales',
+    loadChildren: () => import('./profesionales/profesionales.module').then( m => m.ProfesionalesPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+  
+
+ 
+
 ];
 
 @NgModule({
