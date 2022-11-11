@@ -9,15 +9,15 @@
         </ion-header>
         <ion-content>
             <ion-item>
-                <ion-icon name="business"></ion-icon>
-                <ion-text>&nbsp;Centros Medicos</ion-text>
+                <ion-icon name="business"[routerLink]="['/centros-medicos']"></ion-icon>
+                <ion-text [routerLink]="['/centros-medicos']">&nbsp;Centros Medicos</ion-text>
               </ion-item>
               <ion-item>
-                <ion-icon name="reader"></ion-icon> 
+                <ion-icon name="reader"[routerLink]="['/especialidad']"></ion-icon> 
                 <ion-text [routerLink]="['/especialidad']">&nbsp;Especialidades</ion-text>
               </ion-item>
               <ion-item>
-                <ion-icon name="people-circle-sharp"></ion-icon>
+                <ion-icon name="people-circle-sharp"[routerLink]="['/profesionales']"></ion-icon>
                 <ion-text [routerLink]="['/profesionales']">&nbsp;Medicos</ion-text>
               </ion-item>
               <ion-item>

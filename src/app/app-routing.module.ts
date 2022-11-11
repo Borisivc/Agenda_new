@@ -36,15 +36,13 @@ const routes: Routes = [
     loadChildren: () => import('./contactanos/contactanos.module').then( m => m.ContactanosPageModule)
   },
   {
+    path: 'centros-medicos',
+    loadChildren: () => import('./centros-medicos/centros-medicos.module').then( m => m.CentrosMedicosPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
-  
-
-  
-
- 
-
 ];
 
 @NgModule({
