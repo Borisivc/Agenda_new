@@ -1,5 +1,5 @@
 {
-  "name": "Agenda-Medica",
+  "name": "main",
   "integrations": {
     "capacitor": {}
   },

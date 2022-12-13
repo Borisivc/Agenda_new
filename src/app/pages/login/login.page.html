@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar class="naranja">
+    <ion-title text-center>Gestion de Horas Medicas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-img src="assets/images/inicio.svg"></ion-img>
+
+  <ion-item class="ion-margin-top">
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="login.Usuario"></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="login.Password"></ion-input>
+  </ion-item>
+
+  
+  <ion-button shape="block" (click)="ingresar()" class="ion-margin-top naranja">Ingresar</ion-button>
+  <ion-button shape="block" (click)="registrar()" class="ion-margin-top naranja">Registrarse</ion-button>
+  
+</ion-content>

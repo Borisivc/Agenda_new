@@ -24,3 +24,8 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.naranja{
+    --background: linear-gradient(90deg, rgba(219,18,18,1) 0%, rgba(241,93,7,1) 60%, rgba(214,114,21,1) 100%);;
+    --color: #FFFFFF;
+}

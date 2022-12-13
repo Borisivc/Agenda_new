@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-toolbar class="naranja">
+    <ion-title >Control Horas Medicas</ion-title>
+  </ion-toolbar>
+
+  <ion-content [fullscreen]="true">
+
+     <ion-tabs>
+      <ion-tab-bar slot="bottom">
+
+    
+        <ion-tab-buttons tab="casa">
+          <ion-button (click)="salir()"> 
+            <ion-icon name="home"></ion-icon>
+              <ion-label> Salir</ion-label>
+          </ion-button>
+        </ion-tab-buttons>
+
+      
+        <ion-tab-button tab="perfil">
+          <ion-icon name="person-circle"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+
+        
+        <ion-tab-button tab="horas">
+          <ion-icon name="calendar"></ion-icon>
+          <ion-label>Toma de horas</ion-label>
+        </ion-tab-button>
+      
+    
+        <ion-tab-button tab="maps">
+          <ion-icon name="map"></ion-icon>
+          <ion-label>Ubicacion</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="consultas">
+          <ion-icon name="bandage"></ion-icon>
+          <ion-label>Consulta</ion-label>
+          <ion-button routerLink="/consultas"> </ion-button>
+        </ion-tab-button>
+        
+        
+      </ion-tab-bar>
+    </ion-tabs>
+
+
+  </ion-content>
+</ion-header>
