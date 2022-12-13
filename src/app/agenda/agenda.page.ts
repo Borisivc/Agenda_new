@@ -1,18 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
-  selector: 'app-home',
-  templateUrl: 'agenda.page.html',
-  styleUrls: ['agenda.page.scss'],
+  selector: 'app-agenda',
+  templateUrl: './agenda.page.html',
+  styleUrls: ['./agenda.page.scss'],
 })
-export class AgendaPage {
+export class AgendaPage implements OnInit {
 
   constructor(private router: Router) {
-  }
-  segmentChanged($event){
+
+   }
+   segmentChanged($event){
     console.log($event.detail.value);
     let direction=$event.detail.value
     this.router.navigate(['agenda/'+direction])
   }
-}
 
+  ngOnInit() {
+  }
+
+}

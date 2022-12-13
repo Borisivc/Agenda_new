@@ -12,17 +12,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
-  },
-  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'agenda',
-    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
+    path: 'error',
+    loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
   },
+  {
+    path: 'centros-medicos',
+    loadChildren: () => import('./centros-medicos/centros-medicos.module').then( m => m.CentrosMedicosPageModule)
+  },
+
   {
     path: 'especialidad',
     loadChildren: () => import('./especialidad/especialidad.module').then( m => m.EspecialidadPageModule)
@@ -36,13 +37,11 @@ const routes: Routes = [
     loadChildren: () => import('./contactanos/contactanos.module').then( m => m.ContactanosPageModule)
   },
   {
-    path: 'centros-medicos',
-    loadChildren: () => import('./centros-medicos/centros-medicos.module').then( m => m.CentrosMedicosPageModule)
+    path: 'agenda',
+    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
   },
-  {
-    path: '**',
-    loadChildren: () => import('./notfound/notfound.module').then( m => m.NotfoundPageModule)
-  },
+  
+
 ];
 
 @NgModule({

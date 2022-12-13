@@ -1,29 +1,35 @@
-<ion-header>
-    <ion-toolbar>
-        <ion-button fill="clear" [routerLink]="['/home']">
-            <ion-icon name="arrow-back-circle">Volver</ion-icon>
-        </ion-button>
-        <ion-title>
-            <h1>Login</h1>
-        </ion-title>
-    </ion-toolbar>
-</ion-header>
-<ion-card-content>
-    <ion-item lines="full">
-        <ion-label position="floating">Usuario</ion-label>
-        <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
-    </ion-item>
-    <ion-item lines="full">
-        <ion-label position="floating">Password</ion-label>
-        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
-    </ion-item>         
-</ion-card-content>
 <ion-content>
-    <ion-row>
-        <ion-col></ion-col>
-        <ion-col>
-            <ion-button  (click)="ingresar()">Ingresar</ion-button>
-        </ion-col>
-        <ion-col></ion-col>
-    </ion-row>
+
+  <ion-title class="ion-padding-top ion-text-center">
+    <ion-label>
+      <h1>agenda movil</h1>
+      <p>Aqui comienza todo</p>
+    </ion-label>
+  </ion-title>
+
+  <div class="ion-padding-vertical">
+ 
+    <ion-card class="ion-text-center">
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <h1>Bienvenido!</h1>
+        </ion-label>
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="login.Usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" >Password</ion-label>
+         
+          <ion-input type="password" [(ngModel)]="login.Password"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+      <ion-button shape="block" (click)="registrar()">Registrarse</ion-button>
+    </ion-card>
+  </div>
+  
 </ion-content>
+

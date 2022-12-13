@@ -1,45 +1,45 @@
 <ion-app>
-    <ion-menu side="start" menuId="menuPrincipal" contentId="main">
-        <ion-header>
-            <ion-toolbar color="primary">
-                <ion-title>Menú
-                    <ion-icon name="grid"></ion-icon>
-                </ion-title>
-            </ion-toolbar>
-        </ion-header>
-        <ion-content>
+  <ion-menu side="start" menuId="menuPrincipal" contentId="main">
+      <ion-header>
+          <ion-toolbar color="primary">
+              <ion-title>Menú
+                  <ion-icon name="grid"></ion-icon>
+              </ion-title>
+          </ion-toolbar>
+      </ion-header>
+      <ion-content>
+          <ion-item>
+              <ion-icon name="business"[routerLink]="['/centros-medicos']"></ion-icon>
+              <ion-text [routerLink]="['/centros-medicos']">&nbsp;Centros Medicos</ion-text>
+            </ion-item>
             <ion-item>
-                <ion-icon name="business"[routerLink]="['/centros-medicos']"></ion-icon>
-                <ion-text [routerLink]="['/centros-medicos']">&nbsp;Centros Medicos</ion-text>
-              </ion-item>
-              <ion-item>
-                <ion-icon name="reader"[routerLink]="['/especialidad']"></ion-icon> 
-                <ion-text [routerLink]="['/especialidad']">&nbsp;Especialidades</ion-text>
-              </ion-item>
-              <ion-item>
-                <ion-icon name="people-circle-sharp"[routerLink]="['/profesionales']"></ion-icon>
-                <ion-text [routerLink]="['/profesionales']">&nbsp;Medicos</ion-text>
-              </ion-item>
-              <ion-item>
-                <ion-icon name="today"[routerLink]="['/agenda']"></ion-icon>
-                <ion-text [routerLink]="['/agenda']">&nbsp;Tomas de Horas</ion-text>
-              </ion-item>
-              <ion-item>
-                <ion-icon name="help-circle"[routerLink]="['/agendas']"></ion-icon>
-                <ion-text [routerLink]="['/agendas']">&nbsp;Ayuda</ion-text>
-              </ion-item>
-              <ion-item>
-                <ion-icon name="call" [routerLink]="['/contactanos']"></ion-icon>
-                <ion-text [routerLink]="['/contactanos']">&nbsp;Contactanos</ion-text>
-              </ion-item>
-        </ion-content>
-        <ion-item lines="full">
-            <ion-icon slot="start" name="moon"></ion-icon>
-            <ion-label>
-                Dark Theme
-            </ion-label>
-            <ion-toggle id="themeToggle" slot="end"></ion-toggle>
-        </ion-item>
-    </ion-menu>
-    <ion-router-outlet id="main"></ion-router-outlet>
+              <ion-icon name="reader"[routerLink]="['/especialidad']"></ion-icon> 
+              <ion-text [routerLink]="['/especialidad']">&nbsp;Especialidades</ion-text>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="people-circle-sharp"[routerLink]="['/profesionales']"></ion-icon>
+              <ion-text [routerLink]="['/profesionales']">&nbsp;Medicos</ion-text>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="today"[routerLink]="['/agenda']"></ion-icon>
+              <ion-text [routerLink]="['/agenda']">&nbsp;Tomas de Horas</ion-text>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="help-circle"[routerLink]="['/agendas']"></ion-icon>
+              <ion-text [routerLink]="['/agendas']">&nbsp;Ayuda</ion-text>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="call" [routerLink]="['/contactanos']"></ion-icon>
+              <ion-text [routerLink]="['/contactanos']">&nbsp;Contactanos</ion-text>
+            </ion-item>
+      </ion-content>
+      <ion-item lines="full">
+          <ion-icon slot="start" name="moon"></ion-icon>
+          <ion-label>
+              Dark Theme
+          </ion-label>
+          <ion-toggle id="themeToggle" slot="end"></ion-toggle>
+      </ion-item>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
